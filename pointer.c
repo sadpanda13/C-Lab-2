@@ -1,7 +1,7 @@
 /*
   Lab 2(Data Lab  - Pointers)
  *
- * <PLEASE REPLACE THIS LINE WITH YOUR NAME AND STUDENT USERNAME>
+ * Ryan Zhou 301441064
  *
  * pointer.c - Source file with your solutions to the Lab.
  *             This is the file you will hand in to your instructor.
@@ -111,8 +111,10 @@ int intSize() {
   int *intPtr1;
   int *intPtr2;
   // Write code to compute size of an integer.
-
-  return 2;
+  intPtr1 = &intArray[0];
+  intPtr2 = &intArray[1];
+  int sizeOfInt = (char*)intPtr2 - (char*)intPtr1;
+  return sizeOfInt;
 }
 
 /*
